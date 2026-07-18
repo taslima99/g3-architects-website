@@ -81,10 +81,56 @@
 }       
 .banner-image{
    max-width: 100%;}
+   /* features you will related style */
+
+   .features{
+    gap: 140px;
+   }
+   .section-titel-reatures{
+    border-left:5px solid #FF900E;
+    padding-left: 20px;
+   }
+   .feature-card-titel{
+    font-weight: 600px;
+    font-size: 1.25rem;
+    margin-top: 0px;
+    margin-right: 0px;
+   }
+.feature-card{
+   padding: 30px;
+   box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06) ;
+   margin-bottom:20px ;
+   border-radius: 8px;
+
+}
+.features-architect img{
+    width: 100%;
+}
+
+
+/* features button related style */
+#experience-badge{
+    padding: 45px 42px ;
+    font-size:1.5rem ;
+    font-weight: 500px;
+    margin-left: -92px;
+    margin-top: -100px;
+}
+#experience-year{
+    font-weight: bold;
+    font-size: 4rem;
+}
+
+
+
+
+
+
 
  /* main related style */
  main > section{
     margin-top: 130px;
+   
  }
  main{
     max-width: 1440px;
@@ -98,6 +144,7 @@
  }
  .teams{
     align-items: center;
+    
  }
  .our-features{
     margin-left: 50px;
@@ -106,6 +153,9 @@
  }
  .features-titel{
     font-size: 2.8rem;
+ }
+ .div{
+    margin-left: 50px;
  }
 /* card related style  */
 .fact-description{
@@ -165,11 +215,27 @@
     .sponspors-companys img{
         filter: grayscale(100%);
     }
+    /* footer related style */
+    .footer{
+        max-width: 1440px;
+        background-color: #FFF4E7;
+        text-align: center;
+        padding: 10px;
+       margin: 0 auto;
+       margin-bottom: 40px;
+
+    }
+
+
+
+
+
 /* responsive media query for mobile */
    @media screen and (max-width: 576px){
     .navbar, 
     .nav-links,
-    .teams{
+    .teams,
+    .features{
         flex-direction: column;
     }
     .team-image-container,
@@ -189,13 +255,18 @@
         justify-items: center;
         gap: 50px;
      }
+     #experience-badge{
+        margin-top: 20px;
+        margin-left: 20px;
+     }
 }
     
 
 /* responsive media query for tablet */
 @media screen and (min-width: 576px) and (max-width: 992px){
 
-    .teams{
+    .teams,
+    #features{
         flex-direction: column;
     }
     .our-features{
@@ -207,5 +278,8 @@
         gap: 50px;
         justify-items: center;
     }
+     #experience-badge{
+        margin-top: 20px;
+        margin-left: 20px;}
     
 }
